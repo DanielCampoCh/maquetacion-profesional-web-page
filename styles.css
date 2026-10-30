@@ -1,20 +1,31 @@
-/*
-VARIABLES  
-*/
-
+/* =========================================================
+   1. VARIABLES
+   ========================================================= */
 :root {
   --color-text: #1a1a1a;
+  --color-muted: #555;
   --color-white: #fff;
+  --color-red: #db5243;
+  --color-purple: #6a5fb5;
+  --color-yellow: #e9c55a;
+  --color-teal: #013f48;
+  --color-gray-bg: #f1f2f3;
   --color-navy: #0f3d82;
+  --color-button-purple: #8e4fbf;
 
   --font-base: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
+  --container: 1100px;
+  --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
+  --space-lg: 3rem;
   --radius: 4px;
 }
 
-
+/* =========================================================
+   2. RESET Y BASE
+   ========================================================= */
 *,
 *::before,
 *::after {
@@ -120,7 +131,6 @@ input:focus-visible {
 /* =========================================================
    4. NAVBAR
    ========================================================= */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -190,34 +200,4 @@ input:focus-visible {
   background: var(--color-white);
   color: #1b6ec2;
   cursor: pointer;
-}
-
-.banner {
-  display: flex;
-  align-items: center;
-  min-height: clamp(360px, 45vw, 620px);
-  padding: var(--space-lg) 10%;
-  background-image: url("images/banner-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.banner__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 340px;
-  color: var(--color-white);
-}
-
-.banner__title {
-  width: 100%;
-  margin-bottom: var(--space-xs);
-}
-
-.banner__text {
-  font-size: 0.85rem;
-  margin-bottom: var(--space-sm);
-  text-align: center;
 }
