@@ -405,3 +405,151 @@ input:focus-visible {
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+/* =========================================================
+   11. MORE (OFERTA)
+   ========================================================= */
+.more {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: clamp(380px, 45vw, 620px);
+  padding: var(--space-lg) 5%;
+  background-color: #e6f8f6;
+  background-image: url("images/more-background.jpeg");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.more__content {
+  max-width: 380px;
+  text-align: center;
+  color: var(--color-navy);
+  font-size: 0.85rem;
+}
+
+.more__title {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+}
+
+.more__subtitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-top: var(--space-sm);
+}
+
+.more__content strong {
+  font-size: 1.1rem;
+}
+
+/* =========================================================
+   12. FOOTER
+   ========================================================= */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-sm);
+  background: var(--color-white);
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.footer__logo {
+  height: 28px;
+  width: auto;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.footer__links a {
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   13. RESPONSIVE
+   ========================================================= */
+@media (max-width: 960px) {
+  .navbar__search input {
+    width: 140px;
+  }
+
+  .shop__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movies__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .more {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.5rem var(--space-sm);
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__right {
+    gap: var(--space-sm);
+  }
+
+  .banner {
+    justify-content: center;
+    padding: var(--space-lg) var(--space-sm);
+    /* Capa oscura para que el texto se lea sobre la imagen */
+    background-image:
+      linear-gradient(rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.45)),
+      url("images/banner-background.png");
+  }
+
+  .disney-plus__grid,
+  .parks__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .movies__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .more {
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: auto;
+    padding-top: 55vw;
+    background-size: 100% auto;
+    background-position: top center;
+  }
+}
+
+@media (max-width: 420px) {
+  .shop__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar__search input {
+    width: 110px;
+  }
+}
