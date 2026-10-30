@@ -1,5 +1,11 @@
 # Aprendizajes, dificultades e interacción con la IA
 
+## TRABAJO REALIZADO POR:
+
+JULIAN VELAQUEZ
+Y
+DANIEL CAMPO
+
 ## Contexto del proyecto
 
 Este proyecto consiste en una página web educativa inspirada en el sitio de Disney. Está construida con HTML y CSS, sin JavaScript, y reúne distintas secciones: una barra de navegación, un banner principal, tarjetas de contenido, películas, parques, una oferta y un pie de página.
