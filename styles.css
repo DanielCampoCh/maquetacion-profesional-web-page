@@ -201,3 +201,207 @@ input:focus-visible {
   color: #1b6ec2;
   cursor: pointer;
 }
+
+/* =========================================================
+   5. BANNER
+   ========================================================= */
+.banner {
+  display: flex;
+  align-items: center;
+  min-height: clamp(360px, 45vw, 620px);
+  padding: var(--space-lg) 10%;
+  background-image: url("images/banner-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+  color: var(--color-white);
+}
+
+.banner__title {
+  width: 100%;
+  margin-bottom: var(--space-xs);
+}
+
+.banner__text {
+  font-size: 0.85rem;
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+
+/* =========================================================
+   6. TARJETAS (BLOQUE BASE)
+   ========================================================= */
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__link {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.card__link:hover {
+  opacity: 0.75;
+}
+
+.card__text {
+  font-size: 0.8rem;
+}
+
+/* =========================================================
+   7. SHOP
+   ========================================================= */
+.shop {
+  padding: var(--space-md) 0;
+  background: var(--color-purple);
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.card--shop {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-yellow);
+  text-align: center;
+}
+
+.card--shop img {
+  aspect-ratio: 1 / 1;
+}
+
+.card--shop .card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-xs);
+  padding: var(--space-sm);
+}
+
+.card__title {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.card--shop .card__link {
+  margin-top: auto;
+  padding-top: var(--space-xs);
+}
+
+/* =========================================================
+   8. DISNEY+
+   ========================================================= */
+.disney-plus {
+  padding: var(--space-lg) 0;
+  background: var(--color-teal);
+  color: var(--color-white);
+}
+
+.disney-plus__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+}
+
+.card--dplus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  text-align: center;
+}
+
+.card--dplus img {
+  aspect-ratio: 16 / 9;
+}
+
+.card--dplus .card__text {
+  padding-inline: var(--space-sm);
+}
+
+/* =========================================================
+   9. MOVIES
+   ========================================================= */
+.movies {
+  padding: var(--space-lg) 0;
+  background: var(--color-gray-bg);
+}
+
+.movies__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-sm);
+}
+
+.movie img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-xs);
+}
+
+.movie__title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movie__date {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+/* =========================================================
+   10. PARKS
+   ========================================================= */
+.parks {
+  padding: 0 0 var(--space-lg);
+  background: var(--color-gray-bg);
+}
+
+.parks__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.card--park {
+  background: var(--color-white);
+  text-align: center;
+}
+
+.card--park img {
+  aspect-ratio: 16 / 9;
+}
+
+.card--park .card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+}
+
+.card__subtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
